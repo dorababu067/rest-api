@@ -7,6 +7,9 @@ from django.contrib.auth.models import User
 from .serializers import UserSerializer, PostSerialzer
 
 # Create your views here.
+def home(request):
+    return render(request, 'index.html')
+
 @api_view(['GET', 'POST'])
 def postAPIView(request):
     if request.method == 'GET':

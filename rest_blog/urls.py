@@ -15,8 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
+from post_api import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.home, name='index'),
     path('api/', include('post_api.urls')),
 ]
