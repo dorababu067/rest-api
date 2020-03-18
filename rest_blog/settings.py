@@ -25,7 +25,7 @@ SECRET_KEY = 'l6a)zu8r^u=c)ii!&-c$q0czkp(9d0nxrth#e@w1v&y#i$awx)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['alapakam-open-api.herokuapp','127.0.0.1']
 
 
 # Application definition
